@@ -120,6 +120,7 @@
         }
         .btnOfBtnDiv:hover{
             background-color: #763293;
+            cursor: pointer;
         }
         .second{
             padding: 10px;
@@ -164,7 +165,7 @@
                 <div class="btnDiv">
                     <button class="practice btnOfBtnDiv">Practice of this Video</button>
                     <button class="test btnOfBtnDiv">Test of this Video</button>
-                    <a href="DownloadingFiles/Ritik.pdf" download="RitikFile"><button class="FreeNotes btnOfBtnDiv">Free Notes</button><i class="fa fa-download"></i></a>
+                    <a href="DownloadingFiles/Ritik.pdf" download class="d"><button class="FreeNotes btnOfBtnDiv">Free Notes</button></a>
                     <button class="PaidNotes btnOfBtnDiv">Paid Notes</button>
                 </div>
             </div>
@@ -177,5 +178,11 @@
 
     <!-- This line of code is used to linke the JavaScript_Files in the HTML File. -->
     <script src="/Web-Development_Full_Course/MyWebsites/HomePage/script.js"></script>
+    <script>
+        let button = document.querySelector(".d");
+        button.addEventListener("click",()=>{
+            // alert("Success");
+        })
+    </script>
 </body>
 </html>
