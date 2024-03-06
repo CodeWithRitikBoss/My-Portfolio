@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS variables */
+:root{
+    --mainColor: #3c3a5b;
+    --secondColor: #497aba;
+    --hoverColor: blue;
+    --navMenuHoverColor: #b1bfcb;
+}
+
+header{
+    /* width: 100%; */
+    position: sticky;
+    top: 0;
+}
+nav{
+    width: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px 5px 10px;
+}
+.rotateImage:hover{
+    transform: rotate(359deg);
+    transition: transform 0.5s ease;
+}
+nav h2{
+    width: 20%;
+    color: white;
+    margin: 15px 10px 15px 10px;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    justify-content: flex-end;
+}
+.navMenu{
+    width: 100%;
+    margin-right: 20px;
+}
+nav ul li{
+    padding: 5px 20px 5px 20px;
+    color: white;
+    /* background-color: yellow;
+    margin-right: 20px;
+    border-radius: 50px; */
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--navMenuHoverColor);
+}
+nav ul li:nth-child(8){
+    background-color: yellow;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+nav ul li:nth-child(8) a{
+    color: black;
+    font-weight: bolder;
+}
+nav ul li:nth-child(8):hover{
+    background-color: #367cbf;
+    /* border: 2px solid #3c3a5d; */
+    box-shadow: 2px 4px 6px yellow;
+}
+nav ul li:nth-child(8) a:hover{
+    color: white;
+}
+nav ul li:nth-child(9){ 
+    background-color: yellow;
+    border-radius: 10px;
+    border: none;
+}
+nav ul li:nth-child(9) a{
+    color: black;
+    font-weight: bolder;
+}
+nav ul li:nth-child(9):hover{
+    background-color: #367cbf;
+    /* border: 2px solid #3c3a5d; */
+    box-shadow: 2px 4px 6px yellow;
+}
+nav ul li:nth-child(9) a:hover{
+    color: white;
+}
+
+.box{
+    background-color: #96f052;
+    color: black;
+    text-align: center;
+    padding: 5px 5px 0px 5px;
+    margin: 5px 10px 10px 0px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+/* Notes nav bar */
+.notesBar ul{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px var(--mainColor);
+}
+.notesBar ul li{
+    padding: 5px 15px 5px 15px;
+    list-style: none;
+}
+.notesBar ul a{
+    color: blue;
+    text-decoration: none;
+}
+.notesBar ul a:hover{
+    color: var(--mainColor);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* section1 */
+section{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.subDiv1OfSection1{
+    margin: 80px 0px 0px 100px;
+    width: max-content;
+}
+.subDiv1OfSection1 hr{
+    border: 2px solid #323052;
+    border-radius: 50px;
+    width: 55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/* .subDiv1OfSection1 h1 span{
+    color: #554bdf;
+} */
+.div1OfSection1 h1{
+    color: #554bdf;
+    font-size: 50px;
+}
+#element{
+    font-size: 40px;
+    font-weight: 550;
+    color: rgb(68, 49, 124);
+}
+.div1OfSection1 h2{
+    color: #367cbf;
+    font-size: 42px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.div1OfSection1 h3{
+    color: #367cbf;
+    font-size: 30px;
+    margin-left: 22px;
+}
+.deshboardButton{
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 50px;
+}
+.deshboardButton button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid var(--mainColor);
+    box-shadow: 2px 5px 8px var(--mainColor);
+}
+.deshboardButton :first-child{
+    background-color: var(--mainColor);
+    color: white;
+}
+.deshboardButton :nth-child(2){
+    background-color: white;
+    color: var(--mainColor);
+    margin-left: 20px;
+}
+.deshboardButton :first-child:hover{
+    background-color: #96f052;
+    color: black;
+    box-shadow: 2px 5px 8px blue;
+}
+.deshboardButton :nth-child(2):hover{
+    background-color: #96f052;
+    color: black;
+    box-shadow: 2px 5px 8px blue;
+}
+.section1{
+    display: flex;
+    width: 100%;
+}
+.deshboardImage{
+    width: 100%;
+}
+.deshboardImage{
+    margin-right: 0px;
+}
+.deshboardImage img{
+    margin-top: 25px;
+    margin-right: 70px;
+    width: 50vh;
+    float: right;
+}
+
+/* section2 */
+.section2{
+    width: 100%;
+    background-color: var(--mainColor);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border: none;
+    /* align-items: center; */
+}
+.div1OfSection2{
+    margin: auto;
+    width: 700px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    /* box-shadow: 0 10px 25px rgba(252, 251, 251, 0.3); */
+    box-shadow: 2px 5px 8px blue;
+}
+.div1OfSection2:hover{
+    box-shadow: 2px 5px 8px rgb(199, 104, 222);
+}
+.div1OfSection2 > i{
+    font-size: 20px;
+    color: #3c3a5d;;
+}
+.div1OfSection2 input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--mainColor);
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+}
+.div1OfSection2 input::placeholder{
+    /* font-style: italic; */
+    color: rgb(181, 146, 146);
+    /* opacity: 100; */
+}
+.section2Row{
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+.boxOfSection2{
+    border: none;
+    border-radius: 50px;
+    margin: auto;
+    color: white;
+}
+.boxOfSection2 div img{
+    width: 70%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 4px 8px blue;
+}
+.boxOfSection2 h3{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.boxOfSection2 p{
+    color: #becad4;
+}
+.section2 h2{
+    color: white;
+    margin-top: 100px;
+}
+.section2 h1{
+    color: white;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 250%;
+}
+.section2 h1:hover{
+    color: yellow;
+    font-size: 260%;
+}
+.boxOfSection2 div img:hover{
+    /* border: 2px solid yellow; */
+    /* box-shadow: 2px 5px 8px blue; */
+    box-shadow: 2px 5px 8px yellow;
+}
+
+
+/* section3 */
+.section3{
+    background-color: white;
+    width: 100%;
+}
+.div1OfSection3{
+    /* height: 500px; */
+    background-color: #d9d9d9;
+    margin: 50px 50px 10px 50px;
+    padding: 30px;
+    border-radius: 50px;
+}
+.categoriesHeading h1{
+    color: var(--mainColor);
+    font-size: 50px;
+}
+.categoriesRow{
+    margin: 20px;
+}
+.categoriesButton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.categoriesButton button{
+    border: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 50px;
+    background-color: var(--mainColor);
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.categoriesButton button:hover{
+    box-shadow: 2px 5px 5px blue;
+}
+
+
+
+
+
+
+
+
+/* section4 */
+.section4{
+    /* width: 100%; */
+    /* height: 500px; */
+    /* background-color: aqua; */
+    padding: 10px 40px 10px 40px;
+}
+.div1OfSection4{
+    /* border: 2px solid blue; */
+    padding: 10px 10px 10px 40px;
+}
+.div1OfSection4 h1{
+    font-size: 50px;
+    color: var(--mainColor);
+}
+.div1OfSection4 h3{
+    font-size: 25px;
+    color: var(--secondColor);
+}
+.div2OfSection4{
+    padding: 10px 0px 20px 0px;
+    /* border: 2px solid black; */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+}
+.boxOfSection4{
+    /* height: 500px; */
+    width: 25%;
+    min-height: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid var(--mainColor);
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px #9c99c9;
+}
+.boxOfSection4 img{
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+}
+.boxOfSection4 h1{
+    font-size: 30px;
+    padding: 20px 0px 20px 0px;
+    color: var(--secondColor);
+}
+.boxOfSection4 p{
+    font-size: 20px;
+    color: #759bbc;
+}
+.boxOfSection4 button{
+    border: 2px solid var(--secondColor);
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    margin-top: 80px;
+    box-shadow: 2px 3px 4px var(--mainColor);
+}
+.boxOfSection4 button:hover{
+    box-shadow: 2px 3px 4px blue;
+    background-color: #abee6a;
+    color: blue;
+}
+
+
+
+
+
+
+/* section5 */
+/* .div1OfSection5{
+    width: 100%;
+    height: 500px;
+    background-color: #3c3a5d;
+} */
+
+/* Header section */
+footer{
+    /* height: 200px; */
+    color: white;
+    background-color: var(--mainColor);
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+.footerMainDiv{
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+    /* border: 2px solid yellow; */
+}
+.footerDiv{
+    /* border: 2px solid white; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0px 20px 0px 50px;
+}
+.div1OfFooter{
+    padding: 20px 0px 20px 0px;
+}
+.div1OfFooter img{
+    width: 100px;
+    margin: 0px 20px 0px 10px;
+}
+.div1OfFooter h2{
+    font-size: 35px;
+}
+.div2OfFooter a{
+    color: rgb(213, 136, 233);
+    text-decoration: none;
+}
+.footerMainDiv2{
+    width: 100%;
+    /* border: 2px solid white; */
+    padding: 20px 50px 0px 0px;
+}
+.footerMainDiv2 img{
+    width: 40px;
+    float: right;
+    margin: 5px;
+}
+
+
+
+
+
+
+/* Floating Button of whatsApp Icon*/
+.floatingButton{
+    height: 50px;
+    width: 50px;
+    background-color: var(--mainColor);
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    border-radius: 50px;
+}
+.floatingButton a img{
+    width: 50px;
+    /* height: 50px; */
+}
