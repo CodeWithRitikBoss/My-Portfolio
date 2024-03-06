@@ -62,6 +62,7 @@
             background-color: #222a3e;
             width: 80%;
             min-height: 100vh;
+            padding: 20px;
         }
         .one h3{
             font-size: 18px;
@@ -83,6 +84,52 @@
             font-weight: bolder;
             text-decoration: underline;
             text-decoration-thickness: 2px;
+        }
+        .first{
+            background-color: #3c3a5b;
+            width: 100%;
+            height: fit-content;
+            /* margin: 10px; */
+            border-radius: 20px;
+            display: flex;
+        }
+        .first:hover{
+            box-shadow: 2px 4px 8px yellow;;
+        }
+        .video > iframe{
+            margin: 25px;
+            border-radius: 20px;
+        }
+        .btnDiv{
+            display: flex;
+            flex-direction: column;
+            width: 36%;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .btnOfBtnDiv{
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            margin: 18px 0px 0px 0px;
+            width: 120%;
+            background-color: #b64fe2;
+            padding: 10px 10px;
+            border-radius: 20px;
+            border: none;
+        }
+        .btnOfBtnDiv:hover{
+            background-color: #763293;
+        }
+        .second{
+            padding: 10px;
+        }
+        ._{
+            margin-top: 10px;
+        }
+        .__{
+            margin-top: 20px;
+            margin-left: 20px;
         }
         
     </style>
@@ -110,7 +157,21 @@
             </div>
         </div>
         <div class="contentDiv div1">
-
+            <div class="first">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MWVIf88waIA?si=9YRvLgngT06UShNx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="btnDiv">
+                    <button class="practice btnOfBtnDiv">Practice of this Video</button>
+                    <button class="test btnOfBtnDiv">Test of this Video</button>
+                    <button class="FreeNotes btnOfBtnDiv">Free Notes</button>
+                    <button class="PaidNotes btnOfBtnDiv">Paid Notes</button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="_"><h1>Day 1 - What is C Programming?</h1></div>
+                <div class="__"><h2>What is C Programming?</h2></div>
+            </div>
         </div>
     </div>
 
