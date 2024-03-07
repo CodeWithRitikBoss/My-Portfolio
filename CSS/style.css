@@ -190,6 +190,7 @@ section{
     font-weight: bolder;
     border: 2px solid var(--mainColor);
     box-shadow: 2px 5px 8px var(--mainColor);
+    cursor: pointer;
 }
 .deshboardButton :first-child{
     background-color: var(--mainColor);
